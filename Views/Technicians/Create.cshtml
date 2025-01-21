@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Ajouter un Technicien";
+}
+<div class="container mt-5">
+    <h2>Ajouter un Technicien</h2>
+    <form method="post" action="/Technicians/Create">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="Name" name="Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="Skills" class="form-label">Compétences</label>
+            <input type="text" class="form-control" id="Skills" name="Skills" required>
+        </div>
+        <div class="mb-3">
+            <label for="Availability" class="form-label">Disponibilités</label>
+            <input type="text" class="form-control" id="Availability" name="Availability" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+</div>
